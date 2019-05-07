@@ -1,6 +1,7 @@
 ![](./media/image1.png)
 
-# OCI Overview Hands On Lab
+# Class of SE 2019 - OCI Technical Overview 
+## HOL Part 1
 Contents
 
 [Section 1. Overview](#overview)
