@@ -1,6 +1,7 @@
 ![](./media/image1.png)
+# Class of SE 2019 - OCI Technical Overview 
+## HOL Part 2 - Creating a VCN
 
-# OCI Overview Hands On Lab
 Contents
 
 
@@ -13,38 +14,28 @@ Contents
 
 # Create a Virtual Compute Network
 
-A VCN is the foundation of an OCI cloud environment. It provides your
-customer with complete control over network communications in and out of their tenancy. The
-network is the key to functionality and security within your cloud
-solution. This includes assigning a private IP address space,
-creating subnets, creating route tables, and configuring stateful
-firewalls. A single tenancy can have multiple VCNs, thereby providing
-grouping and isolation of related resources. Your customer might use
-multiple VCNs to separate the resources in different departments within their
-company.
+A VCN is the foundation of an OCI cloud environment. It provides your customer with complete control over network communications in and out of their tenancy. The network is the key to functionality and security within your cloud solution. This includes assigning a private IP address space, creating subnets, creating route tables, configuring stateful firewalls, and creating security rules. A single tenancy can have multiple VCNs, thereby providing grouping and isolation of related resources. Your customer might use multiple VCNs to separate the resources in different departments within their company.
 
-VCNs are located within specific regions and are normally defined within
-Availability Domains (AD). ADs are isolated for high availability.
+VCNs are located within specific regions and are normally defined within Availability Domains (AD). ADs are isolated for high availability.
 
-1.  Click the **hamburger icon** in the upper left corner and navigate
-    to Networking \> Virtual Cloud Networks.
+1.  Click the **hamburger icon** in the upper left corner and navigate to Networking \> Virtual Cloud Networks.
 
 ![](./media/image18.png)
  
-##### Figure 11: VCN Menu Selection
+*<center> Figure 11: VCN Menu Selection </center>*
 
-2.  Click ‘**Create Virtual Cloud Network**’
+2.  Verify you have selected the correct compartment name.
+3.  Click ‘**Create Virtual Cloud Network**’
 
 ![](./media/image19.png)
 
-##### Figure 12: Create Virtual Cloud Network
+*<center> Figure 12: Create Virtual Cloud Network </center>*
 
-3.  Verify your compartment name in the 'Create in Compartment' dialog.
-4.  Name your VCN and choose “**Create virtual cloud network plus related resources’**
+4.  Name your VCN, verify the correct compartment has been selected, and click the radio button for  “**Create virtual cloud network plus related resources’**
     
 <!-- end list -->
 
- Checking the ‘**Create virtual cloud network plus related resources**’ option automatically creates everything you need for a standard virtual cloud network based on a standard non-routable CIDR network numbering scheme. This includes …
+ Choosing the ‘**Create virtual cloud network plus related resources**’ option automatically creates everything you need for a standard virtual cloud network based on a standard non-routable CIDR network numbering scheme. This includes …
 
 <!-- end list -->
 
@@ -54,9 +45,9 @@ Availability Domains (AD). ADs are isolated for high availability.
   - 1 security list
   - 1 DHCP option
 
-![C:\\Users\\dkingsle\\AppData\\Local\\Temp\\SNAGHTML1ecce50.PNG](./media/image20.png)
+![C:\\Users\\dkingsle\\AppData\\Local\\Temp\\SNAGHTML1ecce50.PNG](./media/image20b.png)
 
-##### Figure 13: Create Virtual Cloud Network dialog
+*<center> Figure 13: Create Virtual Cloud Network dialog </center>*
 
 5.  Ensure that ‘Use DNS hostnames in this VCN’ is checked.
 
@@ -64,99 +55,86 @@ Availability Domains (AD). ADs are isolated for high availability.
 
 7.  Click **Create Virtual Cloud Network**
 
-![](./media/image21.png)
+![](./media/image21a.png)
 
-##### Figure 14: Confirm Create Virtual Cloud Network dialog
+*<center> Figure 14: Confirm Create Virtual Cloud Network dialog </center>*
 
 9.  Click Close on the dialog to return to VCN creation. The VCN you created should appear and immediately be in the Available state.
 
-![](./media/image22.png)
+![](./media/image22a.png)
 
-##### Figure 15: VCN Available Description
+*<center> Figure 15: VCN Available Description </center>*
 
-# Add a Security List entry
+# Add Security List entries
 
 A security list is a virtual firewall for an instance, with rules that specify the types of traffic allowed in and out, called ingress and egress respectively. Security lists are enforced at the instance level. However, security lists are configured at the subnet level, which means that all instances in a given subnet are subject to the same set of rules. The security lists apply to a given instance whether it's communicating with another instance in the VCN or a host outside the VCN.
 
-For this particular lab we will be adding security rules to allow access to our Docker container.
+For this particular lab we will be adding security rules to allow access to the GIT version control software we'll be installing later.
 
 1.  Click on the VCN you created (ex: *Team 100 VCN*) and then choose **Security Lists** from the side panel selections
 
-![](./media/image23.png)
+![](./media/image23a.png)
 
-##### Figure 16: VCN Details
+*<center> Figure 16: VCN Details </center>*
 
-![](./media/image24.png)
+![](./media/image24a.png)
 
-##### Figure 17: Security List option
+*<center> Figure 17: Security List option </center>*
 
 2.  Click on **Default Security List** for \<*your VCN name*\>
 
-![](./media/image25.png)
+![](./media/image25a.png)
 
-##### Figure 18
+*<center> Figure 18: Default Security list</center>*
 
-**Note:** *For the upcoming Docker deployments we will add five Ingress Rules that allow Internet access to ports 9080, 8002, 18002, 5600, and 8085. In a production environment, only the UI port (8085) would typically be exposed to the internet. These ports are being expose for testing of other Applications and certain Oracle centric functionality for lab purposes only.*
+**Note:** *For the GIT software installation, we will add three ingress rules to allow connections to the GIT instance.  Git can be access using SSH through port 22.  That rule is configured by default.  We will add port 9418, http access through port 80, and the default secure http (https) port of 443.*
 
-3.  Click **Edit All Rules**
+3.  Click **Add Ingress Rules**
 
-**Note:** *Do not edit or remove existing rules, add new ones to the list.*
+**Note:** *Destination port 22 for TCP SSH traffic has already been added as a default option.*
 
-![](./media/image26.png)
+![](./media/image26a.png)
 
-##### Figure 19: Edit All Rules button
+*<center> Figure 19: Add Ingress Rules button </center>*
 
-4.  Select **+ Another Ingress Rule** button at the bottom.
+4.  Enter the following items in dialog:
 
-![](./media/image27.png)
+    - Source CIDR: 10.0.0.0/16
+    - Destination port Range: 9418
 
-##### Figure 20: + Another Ingress Rule button
+After you've filled in the proper information, click **+ Additional Ingress Rules** at the bottom of the dialog to add another rule.
 
-5.  Enter the following details as Ingress Rules 4, 5, 6, 7, and 8.  Leave all other values at their default.
+![](./media/image27a.png)
 
-**Ingress Rule 4**
+*<center> Figure 20: Add Ingress Rules dialog </center>*
 
-  - Source CIDR: 0.0.0.0/0
-  - Destination Port Range: 8085
+5.  You will add two additional ingress rules.  Enter the following details as *Ingress Rules 2 and 3*.  Leave all other values at their default.
 
-![](./media/image28.png)
-
-##### Figure 21: Ingress Rule 4 example
-
-**Ingress Rule 5**
+**Ingress Rule 2**
 
   - Source CIDR: 0.0.0.0/0
-  - Destination Port Range: 9080
+  - Destination Port Range: 80
 
-**Ingress Rule 6**
-
-  - Source CIDR: 0.0.0.0/0
-  - Destination Port Range: 8002
-
-**Ingress Rule 7**
+**Ingress Rule 3**
 
   - Source CIDR: 0.0.0.0/0
-  - Destination Port Range: 18002
+  - Destination Port Range: 443
 
-**Ingress Rule 8**
+![](./media/image28a.png)
 
-  - Source CIDR: 0.0.0.0/0
-  - Destination Port Range: 5600
+*<center> Figure 21: All ingress rules added </center>*
+
+6.  Click the **Add Ingress Rules** button at the bottom of the
+    page.
 
 ![](./media/image29.png)
 
-##### Figure 22: Ingress Rule 8 example
+*<center> Figure 22: Add Ingress Rules button </center>*
 
-6.  Click the **Save Security List Rules** button at the bottom of the
-    page.
+![](./media/image30a.png)
 
-![](./media/image30.png)
-
-##### Figure 23: Save security list rules button
-
-![](./media/image31.png)
-
-##### Figure 24: Completed ingress rules example
+*<center> Figure 23: Completed ingress rules example </center>*
 
 ![](./media/image99.png)
 
+This lab segment is complete.  If there is time left before the next lecture, browse the OCI cloud interface and familiarize yourself with the layout and basic services.  Wait for the instructor to let you know when to begin section 3.

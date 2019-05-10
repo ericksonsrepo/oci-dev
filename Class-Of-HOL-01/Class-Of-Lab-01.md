@@ -1,7 +1,7 @@
 ![](./media/image1.png)
 
 # Class of SE 2019 - OCI Technical Overview 
-## HOL Part 1
+## HOL Part 1 - Cloud access and creating a compartment
 Contents
 
 [Section 1. Overview](#overview)
@@ -11,17 +11,13 @@ Contents
 [Section 3. Create a Compartment](#create-a-compartment)
 
 
-
 ## 
 
 # Overview
 
 This lab will introduce you to the Oracle Cloud Infrastructure service.
-We will be creating a virtual cloud network, compute instances, and
-block storage. Then we will install and configure Docker containers on
-the compute instance. This lab is designed to be a simple introduction
-to many of the services you will use in the design of a customer
-solution and to familiarize you with those services.
+In part one we'll login and verify that our accounts are working and setup correctly. 
+Then we'll create a compartment that will contain the resources we'll create as the course progresses.  This lab is designed to be a step by step introduction to the basic OCI services.
 
 ## Objectives
 
@@ -29,60 +25,29 @@ solution and to familiarize you with those services.
 
 2.  Create a Compartment and a VCN
 
-3.  Create a compute instance
-
-4.  Create block storage
-
-5.  Access cloud instance
-
-6.  Install Docker and GIT
-
-7.  Install web services
-
 ## Requirements
 
-  - Terminal application (Windows or Linux)
+  - Supported web browswer
+  - Internet access
+  - Pre-provisioned cloud account
+  
+  ## Lab Purpose and Requirements
 
-  - SSH key generation ability
-    
-      - [<span class="underline">Putty/PuttyGen</span>](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
-    
-      - <span class="underline">ssh-keygen (Linux or GIT)</span>
+The purpose of this workshop is to familiarize attendees with the feature functionality of Oracle Cloud Infrastructure. It is assumed that attendees have a solid understanding of basic related concepts such as familiarity with Linux administration, basic network principles, and data storage technologies.
 
-## Lab Purpose and Requirements
+To optimize your experience there are some general guidelines that will help you get the most from these lab exercises.
 
-The purpose of this workshop is to familiarize attendees with the
-feature functionality of Oracle Cloud Infrastructure. It is assumed
-that attendees have a solid understanding of basic related concepts.
+  - **Read through an entire exercise before executing any of the steps.** 
+  Merely following the screen shots or script files without understanding the flow will diminish your learning experience.
 
-To optimize your experience there are some general guidelines that will
-help you get the most from these lab exercises.
+  - **Follow the steps as shown in the workshop manual.**
+    Don’t freestyle during the labs. This is a live environment. If you want to do something that is not in the labs, ask the lab instructor first. In particular, do not create, delete, or alter any database objects without asking first.
 
-  - **Read through an entire exercise before executing any of the
-    steps.** Merely following the screen shots or script files without
-    understanding the flow will diminish your learning experience.
+  - **There is no prize for finishing first; there is no penalty for finishing last.** 
+  The goal is to gain a firm understanding of Oracle Cloud Infrastructure.
 
-  - **Read all the script files before executing them.** Most of them
-    are run to echo the files before actually executing the code.
-    Careful reading of the file before executing will enable you to
-    better understand what the script does.
-
-  - **Ask before you do.** If you have any questions, please ask the
-    instructor before you march down a path that may lead to
-    unsatisfactory results.
-
-  - **Follow the steps as shown in the workshop manual**. Don’t
-    freestyle during the labs. This is a live environment. If you want
-    to do something that is not in the labs, ask the lab instructor
-    first. In particular, do not create, delete, or alter any database
-    objects without asking first.
-
-  - **There is no prize for finishing first; there is no penalty for
-    finishing last.** The goal is to gain a firm understanding of Oracle
-    Cloud Infrastructure.
-
-  - **Ask questions freely.** The only dumb questions are those that are
-    not asked.
+  - **Ask questions freely.** 
+  The only dumb questions are those that are not asked.
 
 # Oracle Cloud Account
 
@@ -92,22 +57,23 @@ help you get the most from these lab exercises.
 
 ![](./media/image6.png)
 
-##### Figure 1: Sample email
+*<center>Figure 1: Sample email</center>*
+
 
 2.  Click the link in the email to access your
     services directly. Use the ***userid*** and ***temporary password***
     from the email to login. You will be asked to change your password.
     Be prepared with a strong password that meets the security criteria.
 
-Your username will be your Oracle email address.
+**Note:** *Your username will be your Oracle email address.*
 
 > ![](./media/image8.png)
 
-##### Figure 2: Cloud Account login screen
+*<center> Figure 2: Cloud Account login screen</center>*
 
 > ![](./media/image9.png)
 
-##### Figure 3: Password reset screen
+*<center> Figure 3: Password reset screen</center>*
 
 > ***Password Criteria:***
 
@@ -121,39 +87,34 @@ Your username will be your Oracle email address.
   - *Cannot repeat the last 4 passwords*
 
 **Note:** *If you <span class="underline">haven’t received an
-introduction email</span> you can login directly. Open a browser and
+introduction email</span> you can login directly and request a password reset. Open a browser and
 navigate to:* <span class="underline">
 <https://cloud.oracle.com/en_US/sign-in>.</span> *Use the ‘**Can’t Sign
 In**’ link to reset your password, a password reset link will be sent to
-your email.*
+your email.  The initial invitation will expire within 24 hours.  If your login offer has expired, contact an admin.*
 
 ![](./media/image10.png)
 
-##### Figure 4: Reset password
+*<center> Figure 4: Reset password</center>*
 
 3.  After you’ve successfully logged in, you should arrive at the Guided
     Journey screen. Choose the hamburger icon at the top left of the
-    screen click **Services**, and choose **Compute.**
+    screen click **Services**, and choose **Compute.**  This will take you to the OCI interface.
 
 ![](./media/image11.png)
 
-##### Figure 5: Guided Journey Screen
+*<center> Figure 5: Guided Journey Screen</center>*
 
 # Create a Compartment
 
-Compartments are used to isolate resources within your OCI tenant.
-Creating resources in the root compartment is not a best practice.
-During the lab exercises, we suggest that you create a compartment for
-your team. You can create all required resources and apply user based
+Compartments are logical containers used to isolate resources within your OCI tenant.  Creating resources in the root compartment is not a best practice.  During the lab exercises, we suggest that you create a compartment for your team. You can create all required resources and apply user based
 access policies within a compartment.
 
-1.  Click the **hamburger icon** in the upper left corner to open the
-    navigation menu. Under the **Identity** section of the menu,
-    click **Compartments**
+1.  Click the **hamburger icon** in the upper left corner to open the navigation menu. Under the **Identity** section of the menu, click **Compartments**
 
 ![](./media/image12.png)
 
-##### Figure 6: OCI Console Compartments menu
+*<center> Figure 6: OCI Console Compartments menu</center>*
 
 2. Click **Create Compartment**
 
@@ -161,20 +122,20 @@ access policies within a compartment.
 
 ![](./media/image13.png)
 
-##### Figure 7:  Create compartment button
+*<center> Figure 7:  Create compartment button</center>*
 
 3.  Choose a descriptive **name** and enter it in the name field. Enter
     a **Description** and click **Create Compartment**.
 
 ![](./media/image14.png)
 
-##### Figure 8: Create compartment dialog
+*<center> Figure 8: Create compartment dialog</center>*
 
 4.  The compartment name will show up in the list.
 
 ![](./media/image15.png)
 
-##### Figure 9: Compartment List
+*<center> Figure 9: Compartment List</center>*
 
 **Note:** If you want to view the compartment details, change the
 compartment name, or delete the compartment, click the ellipses and
@@ -182,6 +143,8 @@ choose an option.
 
 ![C:\\Users\\dkingsle\\AppData\\Local\\Temp\\SNAGHTML121a7a9.PNG](./media/image16.png)
 
-##### Figure 10: Compartment options
+*<center> Figure 10: Compartment options</center>*
 
 ![C:\\Users\\dkingsle\\AppData\\Local\\Temp\\SNAGHTML121a7a9.PNG](./media/image99.png)
+
+This lab segment is complete.    If there is time left before the next lecture, browse the OCI cloud interface and familiarize yourself with the layout and basic services.  Wait for the instructor to let you know when to begin section 2.

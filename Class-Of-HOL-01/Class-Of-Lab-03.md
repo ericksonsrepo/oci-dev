@@ -1,8 +1,9 @@
 ![](./media/image1.png)
 
-# OCI Overview Hands On Lab
-Contents
+# Class of SE 2019 - OCI Technical Overview 
+## HOL Part 3 - Creating and accessing an instance
 
+Contents
 
 [Section 6. Create SSH Key Pair (Linux, Mac, Windows client)](#create-ssh-key-pair-linux-mac-windows-client)
 
@@ -37,19 +38,19 @@ SSH keys are required to access a running OCI instance securely. You can use an 
 
 ![](./media/image32.png)
 
-##### Figure 25: ssh-keygen command
+*<center> Figure 25: ssh-keygen command </center>*
 
-7.  The key pair you generated is now in the current directory.  ls -l command to verify.
+7.  The key pair you generated is now in the current directory.  Use the `ls -l` command to verify.
 
 ![](./media/image33.png)
 
-##### Figure 26: Sample key pair with the example name of team-100.  Your key name should be different.
+*<center> Figure 26: Sample key pair with the example name of team-100.  Your key name should be different. </center>*
 
 8.  For Linux and Mac Clients copy the contents of the public key file (.pub). Use an editor or cat command to view the file and copy the key contents. You can use this for the ‘paste key’ dialog when launching an instance.
 
 ![](./media/image34.png)
 
-##### Figure 27: Copy ssh key
+*<center> Figure 27: Copy ssh key </center>*
 
 ##  Windows
 
@@ -63,29 +64,27 @@ A third party SSH client needs to be installed for Windows versions prior to Win
 
 ![](./media/image35.png)
 
-##### Figure 28:  PuTTYgen utility command
+*<center> Figure 28:  PuTTYgen utility command </center>*
 
 10. Click the Generate button and follow the instructions for generating random information.
 
 ![](./media/image36.png)
 
-##### Figure 29: Generate the key with PuttyGen
+*<center> Figure 29: Generate the key with PuttyGen </center>*
 
-11. After the key information has been generated, enter a **passphrase**
-    and press the **Save private key** button to save the key to your
-    system.
+11. After the key information has been generated, enter a **passphrase** and press the **Save private key** button to save the key to your system.
 
 **Note:** *A passphrase is not required but recommended for stronger security.*
 
 ![](./media/image37.png)
 
-##### Figure 30: Putty save key dialog
+*<center> Figure 30: Putty save key dialog </center>*
 
 12. The private key should have the .ppk extension. Store it in a folder that’s easily accessible.
 
 ![](./media/image38.png)
 
-##### Figure 31: Saving the private key
+*<center> Figure 31: Saving the private key </center>*
 
 **NOTE:**  *We will not use the ‘Save public key’ option in PuttyGen, as the keyfile is not compatible with Linux openSSH. Instead, we will copy and paste the key information into a text file.*
 
@@ -93,48 +92,47 @@ A third party SSH client needs to be installed for Windows versions prior to Win
 
 ![](./media/image39.png)
 
-##### Figure 32: Save all and copy key to clipboard
+*<center> Figure 32: Save all and copy key to clipboard </center>*
 
 14. We will use the clipboard to paste the key information in the next step but you can also save your public key to a text file with Notepad. Open a plain text editor and paste the key information. Name and save the file with a .pub extension.
 
 ![](./media/image40.png)
 
-##### Figure 33: Key pasted and saved with Windows Notepad
+*<center> Figure 33: Key pasted and saved with Windows Notepad </center>*
 
 15. Close the Puttygen application
 
 # Create a Compute Instance
 
-1.  Navigate to the OCI console, use the top left hamburger menu and
-    choose **Compute \> Instances** to open the Instance Creation menu.
+1.  Navigate to the OCI console, use the top left hamburger menu and choose **Compute \> Instances** to open the Instance Creation menu.
 
 ![](./media/image41.png)
 
-##### Figure 34: Create Instance Menu item
+*<center> Figure 34: Create Instance Menu item </center>*
 
-16. Click the **Create Instance** button
+16. Verify that you're using the correct compartment and click the **Create Instance** button
 
-![](./media/image42.png)
+![](./media/image42a.png)
 
-##### Figure 35: Create instance button
+*<center> Figure 35: Create instance button </center>*
 
-![](./media/image43.png)
+![](./media/image43a.png)
 
-##### Figure 36: Information required to create an instance
+*<center> Figure 36: Information required to create an instance </center>*
 
 17. Enter information to create your compute instance.
 
-**Note:** *Each team has been assigned an Availability Domain in order to help conserve resources in the demo lab environment. Please use your assigned Availability Domain.*
+**Note:** *Depending on available resources for Class of SE labs, you may need to select resources from a particular Availability Domain.   If resources aren't available, try another AD.  If in doubt, ask your instructor which AD you should utilize.*
 
-| **Name:**                | **\<instance name\>\_*your\_compartment\_name*** |
+| **Name:**                | \<instance name\> |
 | ------------------------ | ------------------------------------------------ |
-| Availability Domain: | AD assigned to your team AD1, AD2, or AD3   |
+| Availability Domain: | AD of your choice, AD1, AD2, or AD3   |
 | Operating System:    | Oracle Linux 7.6                            |
 | Instance Type:       | Virtual Machine                             |
 | Shape:               | VM.Standard2.1                              |
 | Boot Volume:         | Default                                     |
 | SSH Key:             | Choose SSH Key file or Paste SSH keys      |
-| Compartment:         | Your team compartment* (*ex:* team-100)     |
+| Compartment:         | Your compartment* (*ex:* team-100)     |
 | VCN:                 | Your VCN* (*ex:* Team 100 VCN)              |
 | Subnet Compartment:  | Your subnet compartment* (ex: team-100)     |
 | Subnet:              | Public Subnet in your compartment*            |
@@ -143,30 +141,30 @@ A third party SSH client needs to be installed for Windows versions prior to Win
 
 ![](./media/image44.png)
 
-##### Figure 37: Choose SSH Key option
+*<center> Figure 37: Choose SSH Key option </center>*
 
 ![](./media/image45.png)
 
-##### Figure 38:  Paste SSH key option
+*<center> Figure 38:  Paste SSH key option </center>*
 
 19. In the Configure networking Section leave the default VCN and subnet information and click **Create**. 
-![](./media/image46.png)
+![](./media/image46a.png)
 
-##### Figure 39: Create compute instance dialog
+*<center> Figure 39: Create compute instance dialog </center>*
 
 Your instance will begin provisioning and should be in the available state within a few moments.
 
-![](./media/image47.png)
+![](./media/image47a.png)
 
-##### Figure 40: Instance provisioning
+*<center> Figure 40: Instance provisioning </center>*
 
 After a few moments, the icon will turn green and the title will change to RUNNING.
 
-![](./media/image48.png)
+![](./media/image48a.png)
 
-##### Figure 41: Running instance and Primary VNIC information
+*<center> Figure 41: Running instance and Primary VNIC information </center>*
 
-20. Take note of the assigned Public IP Address you will need this to access the instance later.  
+20. Take note of the Primary VNIC information which contains the assigned Public and Private IP Addresses.  You will need this information to access the instance later in the lab.  
 
 # Access the instance  (Change this section to just access - no Docker)
 
@@ -182,7 +180,7 @@ We will use an SSH terminal session to access the compute image. From there we w
 
 ![](./media/image49.png)
 
-##### Figure 42: SSH connection to running instance
+*<center> Figure 42: SSH connection to running instance </center>*
 
 ## SSH Key access for Windows with Putty
 
@@ -190,25 +188,25 @@ We will use an SSH terminal session to access the compute image. From there we w
 
 ![](./media/image50.png)
 
-##### Figure 43: Putty session information
+*<center> Figure 43: Putty session information </center>*
 
 22. In the Connection category, choose **Data** and enter ‘opc’ as the Auto-login username.
 
 ![](./media/image51.png)
 
-##### Figure 44: Putty auto-login information
+*<center> Figure 44: Putty auto-login information </center>*
 
 23. In the **Connection \> SSH \> Auth** category, use the Browse button to navigate and load the .ppk file you created earlier with Putty.
 
 ![](./media/image52.png)
 
-##### Figure 45: Putty private SSH key
+*<center> Figure 45: Putty private SSH key </center>*
 
 24. Navigate back to the **Session** category, enter a name in the **Saved Sessions** field and choose Save. This will save your SSH terminal session for use later without having to re-enter the information.
 
 v![](./media/image53.png)
 
-##### Figure 46: Putty Save SSH Session
+*<center> Figure 46: Putty Save SSH Session </center>*
 
 25. Click on **Open** to connect to the instance.
 
@@ -216,13 +214,13 @@ v![](./media/image53.png)
 
 ![](./media/image54.png)
 
-##### Figure 47: Putty security alert
+*<center> Figure 47: Putty security alert
 
 27. You will be logged into the compute image:
 
 ![](./media/image55.png)
 
-##### Figure 48: Successful Putty instance login
+*<center> Figure 48: Successful Putty instance login </center>*
 
 ![](./media/image99.png)
 
