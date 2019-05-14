@@ -56,7 +56,7 @@ To optimize your experience there are some general guidelines that will help you
 
 ![](./media/image6.png)
 
-*<center>Figure 1: Sample email </center>*
+*<p align="center">Figure 1: Sample email </p>*
 
 
 2.  Click the link in the email to access your
@@ -68,11 +68,11 @@ To optimize your experience there are some general guidelines that will help you
 
 > ![](./media/image8.png)
 
-*<center> Figure 2: Cloud Account login screen</center>*
+*<p align="center"> Figure 2: Cloud Account login screen</p>*
 
 > ![](./media/image9.png)
 
-*<center> Figure 3: Password reset screen</center>*
+*<p align="center"> Figure 3: Password reset screen</p>*
 
 > ***Password Criteria:***
 
@@ -94,7 +94,7 @@ your email.  The initial invitation will expire within 24 hours.  If your login 
 
 ![](./media/image10.png)
 
-*<center> Figure 4: Reset password</center>*
+*<p align="center"> Figure 4: Reset password</p>*
 
 3.  After you’ve successfully logged in, you should arrive at the Guided
     Journey screen. Choose the hamburger icon at the top left of the
@@ -102,7 +102,7 @@ your email.  The initial invitation will expire within 24 hours.  If your login 
 
 ![](./media/image11.png)
 
-*<center> Figure 5: Guided Journey Screen</center>*
+*<p align="center"> Figure 5: Guided Journey Screen</p>*
 
 # Create a Compartment
 
@@ -113,7 +113,7 @@ access policies within a compartment.
 
 ![](./media/image12.png)
 
-*<center> Figure 6: OCI Console Compartments menu</center>*
+*<p align="center"> Figure 6: OCI Console Compartments menu</p>*
 
 2. Click **Create Compartment**
 
@@ -121,20 +121,20 @@ access policies within a compartment.
 
 ![](./media/image13.png)
 
-*<center> Figure 7:  Create compartment button</center>*
+*<p align="center"> Figure 7:  Create compartment button</p>*
 
 3.  Choose a descriptive **name** and enter it in the name field. Enter
     a **Description** and click **Create Compartment**.
 
 ![](./media/image14.png)
 
-*<center> Figure 8: Create compartment dialog</center>*
+*<p align="center"> Figure 8: Create compartment dialog</p>*
 
 4.  The compartment name will show up in the list.
 
 ![](./media/image15.png)
 
-*<center> Figure 9: Compartment List</center>*
+*<p align="center"> Figure 9: Compartment List</p>*
 
 **Note:** If you want to view the compartment details, change the
 compartment name, or delete the compartment, click the ellipses and
@@ -142,7 +142,7 @@ choose an option.
 
 ![](./media/image16.png)
 
-*<center> Figure 10: Compartment options</center>*
+*<p align="center"> Figure 10: Compartment options</p>*
 
 ![](./media/image99.png)
 
