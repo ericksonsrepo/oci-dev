@@ -169,7 +169,7 @@ After a few moments, the icon will turn green and the title will change to RUNNI
 
 # Access the instance 
 
-We will use SSH through a terminal session to access the compute image. From there we will install GIT.
+We will use SSH through a terminal session to access the compute image. From there we will install the web application.
 
 ## SSH Key access for Linux/Mac 
 
@@ -183,7 +183,7 @@ We will use SSH through a terminal session to access the compute image. From the
 
 *<p align="center"> Figure 41: SSH connection to running instance </p>*
 
-**Note:**  *If your SSH key is located somewhere else in your file structure, use `ssh -i <keyfile name> opc@xxx.xxx.xxx.xxx` to enable SSH to use your key.*
+**Note:**  *If your SSH key is located somewhere else in your file structure, use `ssh -i <keyfile path/keyfile name> opc@xxx.xxx.xxx.xxx` to enable SSH to use your key.*
 
 ## SSH Key access for Windows with Putty
 

@@ -69,7 +69,7 @@ VCNs are located within specific regions and are normally defined within Availab
 
 A security list is a virtual firewall for an instance, with rules that specify the types of traffic allowed in and out, called ingress and egress respectively. Security lists are enforced at the instance level. However, security lists are configured at the subnet level, which means that all instances in a given subnet are subject to the same set of rules. The security lists apply to a given instance whether it's communicating with another instance in the VCN or a host outside the VCN.
 
-For this particular lab we will be adding security rules to allow access to the GIT version control software we'll be installing later.
+For this particular lab we will be adding security rules to allow access to a simple web application that we'll be installing later.
 
 1.  Click on the VCN you created (ex: *Team 100 VCN*) and then choose **Security Lists** from the side panel selections
 
@@ -87,7 +87,7 @@ For this particular lab we will be adding security rules to allow access to the 
 
 *<p align="center"> Figure 18: Default Security list</p>*
 
-**Note:** *For the GIT software installation, we will add three ingress rules to allow connections to the GIT instance.  Git can be access using SSH through port 22.  That rule is configured by default.  We will add port 9418, http access through port 80, and the default secure http (https) port of 443.*
+**Note:** *For the html application installation, we will add a single ingress rule to allow connections on port 80.*
 
 3.  Click **Add Ingress Rules**
 
@@ -99,41 +99,18 @@ For this particular lab we will be adding security rules to allow access to the 
 
 4.  Enter the following items in dialog:
 
-    - Source CIDR: 10.0.0.0/16
-    - Destination port Range: 9418
+    - Source CIDR: 0.0.0.0/0
+    - Destination port Range: 80
 
-After you've filled in the proper information, click **+ Additional Ingress Rules** at the bottom of the dialog to add another rule.
+Leave the **Stateless** check box de-selected.  After you've filled in the proper information, click **Add Ingress Rules** at the bottom of the dialog to complete your entry.
 
-![](./media/image27a.png)
+![](./media/image27b.png)
 
 *<p align="center"> Figure 20: Add Ingress Rules dialog </p>*
 
-5.  You will add two additional ingress rules.  Enter the following details as *Ingress Rules 2 and 3*.  Leave all other values at their default.
+![](./media/image31.png)
 
-**Ingress Rule 2**
-
-  - Source CIDR: 0.0.0.0/0
-  - Destination Port Range: 80
-
-**Ingress Rule 3**
-
-  - Source CIDR: 0.0.0.0/0
-  - Destination Port Range: 443
-
-![](./media/image28a.png)
-
-*<p align="center"> Figure 21: All ingress rules added </p>*
-
-6.  Click the **Add Ingress Rules** button at the bottom of the
-    page.
-
-![](./media/image29.png)
-
-*<p align="center"> Figure 22: Add Ingress Rules button </p>*
-
-![](./media/image30a.png)
-
-*<p align="center"> Figure 23: Completed ingress rules example </p>*
+*<p align="center"> Figure 21: Completed ingress rules example </p>*
 
 ![](./media/image99.png)
 

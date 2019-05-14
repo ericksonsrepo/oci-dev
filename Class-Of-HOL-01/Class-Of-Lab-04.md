@@ -76,33 +76,33 @@ Policies](https://docs.cloud.oracle.com/iaas/Content/Block/Tasks/schedulingvolum
 
 *<p align="center"> Figure 54: Attach Block Volume </p>*
 
-9.  In the Attach Block Volume dialog you can select iSCSI or Paravirtualized as the attachment type. Paravirtualized will connect the volume directly without any further commands, but at a potential performance trade-off from iSCSI. iSCSI attach will require iSCSI commands to be run on the host. These commands are also provided for you in the interface.
+**Note:** *In the Attach Block Volume dialog you can select iSCSI or Paravirtualized as the attachment type. Paravirtualized will connect the volume directly without any further commands, but at a potential performance trade-off from iSCSI. iSCSI attach will require iSCSI commands to be run on the host. These commands are also provided for you in the interface.*
 
-10. Fill out the dialog, choose iSCSI for the mount type, choose your compartment, the volume name you created earlier and click Attach. You can optionally specify a mount point or leave the device path unselected.  Leave CHAP, and Access at their defaults.
+9. Fill out the dialog, choose iSCSI for the mount type, choose your compartment, the volume name you created earlier and click Attach. You can optionally specify a mount point or leave the device path unselected.  Leave CHAP, and Access at their defaults.
 
 ![](./media/image90a.png)
 
 *<p align="center"> Figure 55: Attach block volume dialog </p>*
 
-11. You will see a message about iSCSI attachment commands. Click **Close** to dismiss this message.
+10. You will see a message about iSCSI attachment commands. Click **Close** to dismiss this message.
 
 ![](./media/image91.png)
 
 *<p align="center"> Figure 56: Attach block volume instuctions </p>*
 
-12. When the volume finishes attaching, the icon will turn green with the Attached label below it. Click on the ellipsis and choose iSCSI Commands & Information
+11. When the volume finishes attaching, the icon will turn green with the Attached label below it. Click on the ellipsis and choose iSCSI Commands & Information
 
 ![](./media/image92a.png)
 
 *<p align="center"> Figure 57: iSCSI command dialog </p>*
 
-13. Copy the iSCSI attach commands using the copy link below each command set, or you can copy them one at a time if you wish.  You will paste the commands into your SSH terminal connected to the instance.  The commands can be run as the 'opc' user.
+12. Copy the iSCSI attach commands using the copy link below each command set, or you can copy them one at a time if you wish.  You will paste the commands into your SSH terminal connected to the instance.  The commands can be run as the 'opc' user.
 
 ![](./media/image93a.png)
 
 *<p align="center"> Figure 58: iSCSI commands and information </p>*
 
-14. Go to the terminal window and issue the lsblk command to verify that nothing has been mounted yet.
+13. Go to the terminal window and issue the lsblk command to verify that nothing has been mounted yet.
 
     `opc@instance01 ~]# lsblk`
 
@@ -110,7 +110,7 @@ Policies](https://docs.cloud.oracle.com/iaas/Content/Block/Tasks/schedulingvolum
 
 *<p align="center"> Figure 59: Linux lsblk command output </p>*
 
-15. Issue the iSCSI commands you copied from the Block Volume interface. (Your commands will be different)
+14. Issue the iSCSI commands you copied from the Block Volume interface. (Your commands will be different)
 
     `sudo iscsiadm -m node -o new -T iqn.2015-12.com.oracleiaas:b6eba360-f420-4b41-938e-917717a65ad7 -p 169.254.2.2:3260`
 
@@ -122,7 +122,7 @@ Policies](https://docs.cloud.oracle.com/iaas/Content/Block/Tasks/schedulingvolum
 
 *<p align="center"> Figure 60: iSCSI commands to mount disk on the instance </p>*
 
-16. Run the lsblk command to verify that the disk has been recognized by the operating system.
+15. Run the lsblk command to verify that the disk has been recognized by the operating system.
     
     `[opc@instance01 ~]# lsblk`
 
@@ -130,7 +130,7 @@ Policies](https://docs.cloud.oracle.com/iaas/Content/Block/Tasks/schedulingvolum
 
 *<p align="center"> Figure 61: Linux lsblk command showing attached disk </p>*
 
-17. Run the following commands to format the disk and mount it. Press 'Y' to proceed when prompted with the warning about formatting the entire device.
+16. Run the following commands to format the disk and mount it. Press 'Y' to proceed when prompted with the warning about formatting the entire device.
 
     `[opc@instance01 ~]# sudo mkfs –t ext4 /dev/sdb`
 
@@ -146,7 +146,7 @@ Policies](https://docs.cloud.oracle.com/iaas/Content/Block/Tasks/schedulingvolum
 
 `[opc@instance01 ~# ls –l /mnt/www`
 
-![](./media/image98a.png)
+![](./media/image98b.png)
 
 *<p align="center"> Figure 63: Linux mount commands for block volume </p>*
 
@@ -178,13 +178,16 @@ Policies](https://docs.cloud.oracle.com/iaas/Content/Block/Tasks/schedulingvolum
 
 *<p align="center"> Figure 66: Start the web server </p>*
 
-4. In the next steps, we'll download a pre-configured web application and install it on our instance.  Download the application zip file and unzip the package into the opc home directory.
+4. In the next steps, we'll download a pre-configured web application and install it on our instance.  Download the application zip file and unzip the package into the opc home directory.  Use the *wget* command to download the static web application.
 
 ```wget https://github.com/snafuz/oci-quickstart-lab/archive/master.zip```
+
 
 ![](./media/image104.png)
 
 *<p align="center"> Figure 67: Download http application </p>*
+
+Unzip the file into the opc home directory.
 
 ```unzip master.zip```
 
@@ -208,7 +211,7 @@ Policies](https://docs.cloud.oracle.com/iaas/Content/Block/Tasks/schedulingvolum
 
 ```sudo vi /etc/httpd/conf/httpd.conf```
 
-8. Search for the string '/var/www' and replace it with '/mnt/www' . There are 3 mentions in the file.
+8. Search for the string '/var/www' and replace it with '/mnt/www/html/' . There are 3 mentions in the file.
 
 ![](./media/image107.png)
 
