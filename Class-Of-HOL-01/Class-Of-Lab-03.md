@@ -38,7 +38,7 @@ SSH keys are required to access a running OCI instance securely. You can use an 
 
 ![](./media/image32.png)
 
-*<center> Figure 25: ssh-keygen command </center>*
+<center> Figure 25: ssh-keygen command </center>
 
 7.  The key pair you generated is now in the current directory.  Use the `ls -l` command to verify.
 
