@@ -1,9 +1,9 @@
+
 ![](./media/image1.png)
 
 ## Class of SE - HOL Part 2 - Creating a VCN
 
 Contents
-
 
 [Section 4. Create a Virtual Compute Network](#create-a-virtual-compute-network)
 
@@ -65,7 +65,7 @@ VCNs are located within specific regions and are normally defined within Availab
 
 *<p align="center"> Figure 15: VCN Available Description </p>*
 
-# Add Security List entries
+# Add A Security List Entry
 
 A security list is a virtual firewall for an instance, with rules that specify the types of traffic allowed in and out, called ingress and egress respectively. Security lists are enforced at the instance level. However, security lists are configured at the subnet level, which means that all instances in a given subnet are subject to the same set of rules. The security lists apply to a given instance whether it's communicating with another instance in the VCN or a host outside the VCN.
 
@@ -115,3 +115,7 @@ Leave the **Stateless** check box de-selected.  After you've filled in the prope
 ![](./media/image99.png)
 
 This lab segment is complete.  If there is time left before the next lecture, browse the OCI cloud interface and familiarize yourself with the layout and basic services.  Wait for the instructor to let you know when to begin section 3.
+
+[Back to top](#Class-of-SE---HOL-Part-2---Creating-a-VCN)
+
+##
