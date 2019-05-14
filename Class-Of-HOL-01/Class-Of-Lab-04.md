@@ -1,6 +1,6 @@
 ![](./media/image1.png)
 
-# Class of SE - HOL Part 4 - Block storage and application  install
+# Class of SE - HOL Part 4 - Block storage and application install
 
 Contents
 
@@ -392,6 +392,7 @@ You created a virtual cloud network, a compute instance, and block storage. You 
 
   - Terminated the resources
 
-##
 
 ![](./media/image99.png)
+
+[Back to top](#Class-of-SE---HOL-Part-4---Block-storage-and-application-install)

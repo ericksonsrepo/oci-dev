@@ -233,4 +233,6 @@ v![](./media/image53b.png)
 
 This lab segment is complete.    If there is time left before the next lecture, browse the OCI cloud interface and familiarize yourself with the layout and basic services.  Wait for the instructor to let you know when to begin section 4.
 
+[Back to top](#Class-of-SE---HOL-Part-3---Creating-and-accessing-an-instance)
+
 ##
