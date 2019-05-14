@@ -1,7 +1,6 @@
 ![](./media/image1.png)
 
-# Class of SE 2019 - OCI Technical Overview 
-## HOL Part 1 - Cloud access and creating a compartment
+## Class of SE - HOL Part 1 - Cloud access and creating a compartment
 Contents
 
 [Section 1. Overview](#overview)
@@ -12,7 +11,7 @@ Contents
 
 
 ## 
-
+#
 # Overview
 
 This lab will introduce you to the Oracle Cloud Infrastructure service.
@@ -57,7 +56,7 @@ To optimize your experience there are some general guidelines that will help you
 
 ![](./media/image6.png)
 
-*<center>Figure 1: Sample email</center>*
+*<center>Figure 1: Sample email </center>*
 
 
 2.  Click the link in the email to access your
@@ -141,10 +140,10 @@ access policies within a compartment.
 compartment name, or delete the compartment, click the ellipses and
 choose an option.
 
-![C:\\Users\\dkingsle\\AppData\\Local\\Temp\\SNAGHTML121a7a9.PNG](./media/image16.png)
+![](./media/image16.png)
 
 *<center> Figure 10: Compartment options</center>*
 
-![C:\\Users\\dkingsle\\AppData\\Local\\Temp\\SNAGHTML121a7a9.PNG](./media/image99.png)
+![](./media/image99.png)
 
 This lab segment is complete.    If there is time left before the next lecture, browse the OCI cloud interface and familiarize yourself with the layout and basic services.  Wait for the instructor to let you know when to begin section 2.

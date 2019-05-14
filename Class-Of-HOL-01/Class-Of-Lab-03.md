@@ -1,7 +1,7 @@
 ![](./media/image1.png)
 
-# Class of SE 2019 - OCI Technical Overview 
-## HOL Part 3 - Creating and accessing an instance
+
+## Class of SE - HOL Part 3 - Creating and accessing an instance
 
 Contents
 
@@ -148,6 +148,7 @@ A third party SSH client needs to be installed for Windows versions prior to Win
 *<center> Figure 38:  Paste SSH key option </center>*
 
 19. In the Configure networking Section leave the default VCN and subnet information and click **Create**. 
+
 ![](./media/image46a.png)
 
 *<center> Figure 39: Create compute instance dialog </center>*
@@ -166,55 +167,61 @@ After a few moments, the icon will turn green and the title will change to RUNNI
 
 20. Take note of the Primary VNIC information which contains the assigned Public and Private IP Addresses.  You will need this information to access the instance later in the lab.  
 
-# Access the instance  (Change this section to just access - no Docker)
+# Access the instance 
 
-We will use an SSH terminal session to access the compute image. From there we will install Docker and GIT.
+We will use SSH through a terminal session to access the compute image. From there we will install GIT.
 
 ## SSH Key access for Linux/Mac 
 
 1.  Use your favorite terminal program and issue the below ssh command to connect. Use the public IP address of your instance as referenced in the above screenshot.  (*The IP address listed is for example only, please use your own)*
 
-21. Navigate to the subdirectory where you key is stored and issue the following command.
+21. Issue the following command.
 
-    `ssh –i <your private key name> opc@<your ip address>`
+    `ssh  opc@<your ip address>`
 
-![](./media/image49.png)
+![](./media/image49a.png)
 
 *<center> Figure 42: SSH connection to running instance </center>*
+
+**Note:**  *If your SSH key is located somewhere else in your file structure, use `ssh -i <keyfile name> opc@xxx.xxx.xxx.xxx` to enable SSH to use your key.*
 
 ## SSH Key access for Windows with Putty
 
 1.  For Windows clients, open Putty. With the Session category selected, enter the IP address for the instance you want to access and select SSH from the radio buttons (port 22).
 
-![](./media/image50.png)
+![](./media/image50a.png)
 
 *<center> Figure 43: Putty session information </center>*
 
 22. In the Connection category, choose **Data** and enter ‘opc’ as the Auto-login username.
 
-![](./media/image51.png)
+![](./media/image51a.png)
 
 *<center> Figure 44: Putty auto-login information </center>*
 
 23. In the **Connection \> SSH \> Auth** category, use the Browse button to navigate and load the .ppk file you created earlier with Putty.
 
-![](./media/image52.png)
+![](./media/image52a.png)
 
 *<center> Figure 45: Putty private SSH key </center>*
 
-24. Navigate back to the **Session** category, enter a name in the **Saved Sessions** field and choose Save. This will save your SSH terminal session for use later without having to re-enter the information.
+24. Navigate back to the **Session** category, enter a name in the **Saved Sessions** field and choose Save. Use any name you like for the session name in Putty.  This will save your SSH terminal session for use later without having to re-enter the information.
 
-v![](./media/image53.png)
+v![](./media/image53a.png)
 
 *<center> Figure 46: Putty Save SSH Session </center>*
 
 25. Click on **Open** to connect to the instance.
 
+v![](./media/image53b.png)
+
+*<center> Figure 47: Open Putty Session </center>*
+
 26. Choose **Yes** on the alert message:
 
 ![](./media/image54.png)
 
-*<center> Figure 47: Putty security alert
+*<center> Figure 47: Putty security alert </center>*
 
 27. You will be logged into the compute image:
 
@@ -223,5 +230,7 @@ v![](./media/image53.png)
 *<center> Figure 48: Successful Putty instance login </center>*
 
 ![](./media/image99.png)
+
+This lab segment is complete.    If there is time left before the next lecture, browse the OCI cloud interface and familiarize yourself with the layout and basic services.  Wait for the instructor to let you know when to begin section 4.
 
 ##
