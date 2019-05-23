@@ -18,7 +18,7 @@
 
 [Launch a Compute Instance](#Launch-a-Compute-Instance)
 
-[Bonus Exercise: Use the CLI to create the rest of the VCN resources](#bonus-exercise-use-the-cli-to-create-the-rest-of-the-vcn-resources)
+[OCI Challenge: Create more resources](#OCI-Challenge:-Create-more-resources)
 
 ## Overview
 
@@ -74,10 +74,6 @@ Selecting **Create Virtual Cloud Network Plus Related Resources** is the easy wa
 # Create a compute instance and install the OCI CLI
 
 **Note:**  *You will need an SSH key pair to create and access an OCI instance.  You can use an existing SSH Key pair (the one you created in the last lab), or create a new one.  If you would like to create a new key pair, please reference the key pair creation information from the first hands on lab.*
-
-[Create an SSH Key Pair](#find-out-how-to-link-to-the-first-lab)
-
-```note to self:  create a link to the SSH Key Pair Creation information from the first lab or better yet, create a standalone Key Pair Creation lab for Windows, Mac, and Linux```
 
 1. From the OCI Services hamburger menu, choose **Compute** > **Instances** 
 
@@ -563,7 +559,7 @@ Capture the ``id:`` of the compute instance launch output.
 ```[opc@cli-instance ~]$ oci compute instance get --instance-id $IID --query 'data."lifecycle-state"'```
 
 ![](./media/image060.png)
-*<p align="center"> Figure 57. Instance ID variable</p>*
+*<p align="center"> Figure 58. Instance ID variable</p>*
 
 4. Rerun the command every 30-60 seconds until the lifecycle-state is ``RUNNING``
 
@@ -614,3 +610,5 @@ This challenge is optional if you have extra time.   Below are a couple of objec
 ## Congratulations! You have successfully completed Getting Started with OCI CLI lab.
 
 ![](./media/image99.png)
+
+[Back to top](#Class-of-SE---HOL-Part-2)
