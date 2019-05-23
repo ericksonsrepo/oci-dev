@@ -18,7 +18,7 @@
 
 [Launch a Compute Instance](#Launch-a-Compute-Instance)
 
-[OCI Challenge: Create more resources](#OCI-Challenge:-Create-more-resources)
+[OCI Challenge - Create more resources](#OCI-Challenge---Create-more-resources)
 
 ## Overview
 
@@ -74,6 +74,8 @@ Selecting **Create Virtual Cloud Network Plus Related Resources** is the easy wa
 # Create a compute instance and install the OCI CLI
 
 **Note:**  *You will need an SSH key pair to create and access an OCI instance.  You can use an existing SSH Key pair (the one you created in the last lab), or create a new one.  If you would like to create a new key pair, please reference the key pair creation information from the first hands on lab.*
+
+<!-- this section is where I should insert a link to a standalone module on how to create an SSH Key.  This module will cover PC, Mac, and Linux so we don't have to keep putting it in the lab guides.-->
 
 1. From the OCI Services hamburger menu, choose **Compute** > **Instances** 
 
@@ -573,7 +575,7 @@ Capture the ``id:`` of the compute instance launch output.
 ##
 
 
-# OCI Challenge: Create more resources
+# OCI Challenge - Create more resources
 
 This challenge is optional if you have extra time.   Below are a couple of objectives that you can try on your own with no step-by-step instructions.  Use the knowledge that you've gained already plus resources like the OCI CLI reference documentation, Oracle blogs, etc. for guidance.
 
