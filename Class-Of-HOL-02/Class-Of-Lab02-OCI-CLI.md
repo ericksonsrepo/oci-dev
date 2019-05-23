@@ -18,7 +18,7 @@
 
 [Launch a Compute Instance](#Launch-a-Compute-Instance)
 
-[OCI Challenge - Create more resources](#OCI-Challenge---Create-more-resources)
+[OCI Challenge - Create and Destroy resources](#OCI-Challenge---Create-and-Destroy-resources)
 
 ## Overview
 
@@ -320,7 +320,7 @@ Next we'll test and see if the CLI is working correctly.
 
 - Store the OCID of your compartment as a variable for later reference and usage.  Issue the same series of echo commands to store the variable in the .bashrc file.  Use the letters CID to reference 'Compartment ID"
 
-```[opc@cli-instance ~]$ echo "export CID=ocid1.compartment.oc1..aaaaaaaaitk7shy7jg3hej6sim6ds6kf43vdkvjpjaajn2s2wkfg2zollwla" >> .bashrc ``` 
+```[opc@cli-instance ~]$ echo "export CID=<your compartment id>" >> .bashrc ``` 
 
 ```[opc@cli-instance ~]$ . .bashrc```
 
@@ -352,7 +352,7 @@ From this point in the lab, we'll mainly be using the CLI to add and configure r
 
 - Create another variable to store the VCN OCID named *VCNID*    Record the ``id:`` of the resource after it is created.  You will need it in the upcoming steps.
 
-```[opc@cli-instance ~]$ echo "export VCNID=ocid1.vcn.oc1.iad.aaaaaaaapuextykftv4losvvqcgr36rtrbt4dc425zhjdduecjr7tdezesua" >> .bashrc``` 
+```[opc@cli-instance ~]$ echo "export VCNID=<your vcn id>" >> .bashrc``` 
 
 ```[opc@cli-instance ~]$ . .bashrc```
 
@@ -387,7 +387,7 @@ From this point in the lab, we'll mainly be using the CLI to add and configure r
 
 - Below are commands to store it as the variable $SLID in the .bashrc file for later reference.
 
-```[opc@cli-instance ~]$ echo "export SLID=" >> .bashrc``` 
+```[opc@cli-instance ~]$ echo "export SLID="<your security list id" >> .bashrc``` 
 
 ```[opc@cli-instance ~]$ . .bashrc```
 
@@ -421,7 +421,7 @@ From this point in the lab, we'll mainly be using the CLI to add and configure r
 
 - Record the ID of the subnet in another environment variable.  Se the example below using SUBID as the environment variable name.  Substitute the ID of the subnet you obtained in the last step.   You will need this value later.
 
-```[opc@cli-instance ~]$ echo "export SUBID=ocid1.subnet.oc1.iad.aaaaaaaabb6jrrnkutr6jwzb3bepeuxipbsmigp5jqaizvgoqbfflzzct6pq" >> .bashrc``` 
+```[opc@cli-instance ~]$ echo "export SUBID=<your subnet id>" >> .bashrc``` 
 
 ```[opc@cli-instance ~]$ . .bashrc```
 
@@ -439,7 +439,7 @@ From this point in the lab, we'll mainly be using the CLI to add and configure r
 
 Let's store the Internet Gateway ID as a variable as well.
 
-```[opc@cli-instance ~]$ echo "export IGWID=ocid1.internetgateway.oc1.iad.aaaaaaaam44gj7p7sdcorawyub6ojfmhghoumtomvzynjn757vy7wcqiszfq" >> .bashrc``` 
+```[opc@cli-instance ~]$ echo "export IGWID=<your gateway id>" >> .bashrc``` 
 
 ```[opc@cli-instance ~]$ . .bashrc```
 
@@ -457,7 +457,7 @@ Let's store the Internet Gateway ID as a variable as well.
 
 Again, record the route table id as a variable.
 
-```[opc@cli-instance ~]$ echo "export RTID=ocid1.routetable.oc1.iad.aaaaaaaaec7rjifockyx7ijcxldgwvjkoe6bues4ruynfqcy5b5ncs3gxcca" >> .bashrc```
+```[opc@cli-instance ~]$ echo "export RTID=<your route table id>" >> .bashrc```
 
 ```[opc@cli-instance ~]$ . .bashrc```
 
@@ -510,7 +510,7 @@ Again, record the route table id as a variable.
 
 - Out of the three available versions, use the image ID of the latest build.  Store the image ID in a variable to make the following step simpler.  The steps below use a variable named IMAGEID.
 
-```[opc@cli-instance ~]$ echo "export IMAGEID=ocid1.image.oc1.iad.aaaaaaaa4bfsnhv2cd766tiw5oraw2as7g27upxzvu7ynqwipnqfcfwqskla" >> .bashrc```
+```[opc@cli-instance ~]$ echo "export IMAGEID=<your image id>" >> .bashrc```
 
 ```[opc@cli-instance ~]$ . .bashrc```
 
@@ -545,7 +545,7 @@ You can use the ID of the instance to monitor the status.  Copy the instance OCI
 
 - Or you can capture the ID of the instance as yet another environment variable.
 
-```[opc@cli-instance ~]$ echo "export IID=ocid1.image.oc1.iad.aaaaaaaa4bfsnhv2cd766tiw5oraw2as7g27upxzvu7ynqwipnqfcfwqskla" >> .bashrc```
+```[opc@cli-instance ~]$ echo "export IID=<your instance id>" >> .bashrc```
 
 ```[opc@cli-instance ~]$ . .bashrc```
 
@@ -575,7 +575,7 @@ Capture the ``id:`` of the compute instance launch output.
 ##
 
 
-# OCI Challenge - Create more resources
+# OCI Challenge - Create and Destroy resources
 
 This challenge is optional if you have extra time.   Below are a couple of objectives that you can try on your own with no step-by-step instructions.  Use the knowledge that you've gained already plus resources like the OCI CLI reference documentation, Oracle blogs, etc. for guidance.
 
