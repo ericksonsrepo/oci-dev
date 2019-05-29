@@ -96,7 +96,7 @@ Upon Login You Should See
 
 *<p align="center">Figure 10: Oracle Cloud My Home page</p>*
 
-#### HOL Activity - Sign Into Oracle Cloud First Time
+### HOL Activity - Sign Into Oracle Cloud First Time
 
 ![](media/e1b571dd028715c327851f7f09db43b7.png)
 
