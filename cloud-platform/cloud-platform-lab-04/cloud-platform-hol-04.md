@@ -62,27 +62,26 @@ In some circumstances, you may receive a separate Oracle Cloud email and in that
 As that may not always be available, we will next go through how to access Oracle Cloud should someone have not gotten that link, or it’s not available
 
 ## To Access the Oracle Cloud
-### Enter URL **http://cloud.oracle.com/en_US/sign-in** into your browser.
+#### Step 1: Enter URL **http://cloud.oracle.com/en_US/sign-in** into your browser.
 
 ![](media/4c0ce66dbe90b4c8c4579078bfa0e984.png)
 *<p align="center">Figure 5: Cloud Account Sign In</p>*
 
+#### Step 2: Enter the Tenancy Name, orasenatdhubsblue02
 ![](media/3fc10ea927f5a2648b0dbb9dfd257d7a.png)
 *<p align="center">Figure 6: Enter Tenancy Name</p>*
 
-Complete Step 3 & 4
-
-Choose **Oracle SSO** to the right
+#### Step 3: Choose Sign in with Oracle SSO
 
 ![](media/beeaddbd466fb83fe3f12d61bdcbaa63.png)
 
-*<p align="center">Figure 7: SSO Login</p>*
+*<p align="center">Figure 7: Oracle SSO Login</p>*
 
-Enter your standard SSO credentials
+#### Step 4: Enter your standard SSO credentials
 
 ![](media/572bdb0971a2d56b2888d1ae4ef829f7.png)
 
-*<p align="center">Figure 8: SSO Login</p>*
+*<p align="center">Figure 8: Enter your SSO credentials</p>*
 
 Upon Login You Should See
 
