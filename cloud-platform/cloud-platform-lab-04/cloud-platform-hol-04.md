@@ -1,7 +1,5 @@
 ![](media/ocpheading.png)
-# Oracle Cloud Hands On Lab
-
-Oracle Cloud Platform
+# Class of SE - Oracle Cloud Hands On Lab
 
 Objectives:
 
@@ -11,7 +9,7 @@ Objectives:
 -   Understand the Oracle Cloud Dashboard and be familiar with its function so
     as to execute labs
 
--   Then get some hands on with the Oracle Cloud Console and becoming familiar
+-   Then get some hands on with the Oracle Cloud My Services Console and becoming familiar
     with its function
 
 -   And the Oracle Cloud environment in general
