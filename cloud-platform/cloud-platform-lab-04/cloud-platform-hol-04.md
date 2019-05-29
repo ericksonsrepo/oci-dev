@@ -61,7 +61,8 @@ In some circumstances, you may receive a separate Oracle Cloud email and in that
 
 As that may not always be available, we will next go through how to access Oracle Cloud should someone have not gotten that link, or it’s not available
 
-## To Access the Oracle Cloud - Enter URL **http://cloud.oracle.com/en_US/sign-in** into your browser.
+## To Access the Oracle Cloud
+### Enter URL **http://cloud.oracle.com/en_US/sign-in** into your browser.
 
 ![](media/4c0ce66dbe90b4c8c4579078bfa0e984.png)
 *<p align="center">Figure 5: Cloud Account Name</p>*
