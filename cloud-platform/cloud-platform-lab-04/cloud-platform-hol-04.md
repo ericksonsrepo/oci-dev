@@ -38,12 +38,12 @@ If you recieved an email that looks like this one
 
 -   We will skip to slide 9 on how to access it
 
-Account Activation Email - Sign In For the First Time
+## The Account Activation Email - Sign In For the First Time
 
 ![](media/49171907d9801cc1287b8df3a728c9a2.png)
 *<p align="center">Figure 2: Activate Your Account</p>*
 
-If your email looks like this one above
+If you recieved an email that looks like this one 
 
 -   Select Activate
 -   It will take you to the reset password page
@@ -52,7 +52,7 @@ If your email looks like this one above
 ![](media/e1b571dd028715c327851f7f09db43b7.png)
 *<p align="center">Figure 3: Password Criteria</p>*
 
-Another Access Email Type
+## Another Access Email Type
 
 ![](media/c912d1582a6c3be888181c3552152239.png)
 *<p align="center">Figure 4: Login Screen</p>*
@@ -61,7 +61,7 @@ In some circumstances, you may receive a separate Oracle Cloud email and in that
 
 As that may not always be available, we will next go through how to access Oracle Cloud should someone have not gotten that link, or it’s not available
 
-Enter URL **http://cloud.oracle.com/en_US/sign-in**
+## To Access Oracle Cloud Enter URL **http://cloud.oracle.com/en_US/sign-in** into your browser.
 
 ![](media/4c0ce66dbe90b4c8c4579078bfa0e984.png)
 *<p align="center">Figure 5: Cloud Account Name</p>*
