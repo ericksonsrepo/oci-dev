@@ -1,4 +1,4 @@
-![](./media/OCPheader.png)
+![](media/ocpheader.png)
 # Lab Preparation and Logistics
 
 Were going to review the set-up requirements and how to gain access to the
