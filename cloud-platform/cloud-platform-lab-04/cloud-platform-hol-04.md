@@ -1,3 +1,4 @@
+![](media/ocpheading.png)
 # Oracle Cloud Hands On Lab
 
 Oracle Cloud Platform
