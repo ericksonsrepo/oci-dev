@@ -94,7 +94,7 @@ Upon Login You Should See
 
 ![](media/742ce48883a769429bfea72c0971c264.png)
 
-*<p align="center">Figure 10: My Oracle Services View</p>*
+*<p align="center">Figure 10: Oracle Cloud My Home page</p>*
 
 Activity - Sign Into Oracle Cloud For First Time
 
