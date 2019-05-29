@@ -1,5 +1,5 @@
 ![](media/ocpheading.png)
-# Lab Preparation and Logistics
+# Class of SE - HOL Lab Preparation
 
 Were going to review the set-up requirements and how to gain access to the
 Oracle Cloud.
