@@ -96,17 +96,17 @@ Upon Login You Should See
 
 *<p align="center">Figure 10: Oracle Cloud My Home page</p>*
 
-Activity - Sign Into Oracle Cloud For First Time
+#### HOL Activity - Sign Into Oracle Cloud First Time
 
 ![](media/e1b571dd028715c327851f7f09db43b7.png)
 
 *<p align="center">Figure 11: Password Criteria</p>*
 
-1.  Enter the user name and temporary password from the welcome email and click
-    Sign In
+1.  If provided, enter user name and temporary password from the welcome email you recieved and click
+    Sign In. If only provided an account is ready email, then you will use your Oracle SSO credentials. 
 2.  You’ll be prompted to change your password the first time you sign in.
-3.  Depending on how you signed up for Oracle Cloud, you’ll be directed to
-    either: Oracle Cloud My Home or Oracle Cloud Guided Journey page
+3.  Depending on how you signed up for Oracle Cloud or the account setup by the Cloud Administrator, you’ll be directed to
+    either: the Oracle Cloud Guided Journey or Oracle Cloud My Home page. 
 
 ![](media/f2dfaca6ed510f1b851e64966ddc562a.png)
 *<p align="center">Figure 12: Sign Out</p>*
