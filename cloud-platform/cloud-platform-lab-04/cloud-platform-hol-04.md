@@ -67,7 +67,7 @@ As that may not always be available, we will next go through how to access Oracl
 ![](media/4c0ce66dbe90b4c8c4579078bfa0e984.png)
 *<p align="center">Figure 5: Cloud Account Sign In</p>*
 
-#### Step 2: Enter the Tenancy Name, orasenatdhubsblue02
+#### Step 2: Enter the Tenancy Name  orasenatdhubsblue02 into the account dialog box
 ![](media/3fc10ea927f5a2648b0dbb9dfd257d7a.png)
 *<p align="center">Figure 6: Enter Tenancy Name</p>*
 
