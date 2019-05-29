@@ -18,11 +18,9 @@ Objectives:
 
 # Lab Demo and Steps
 
--   First a quick demonstration of the lab by your instructor
+-   First a quick demonstration of the lab by your instructor, explaining the steps in this lab
 
-    -   Explaining the steps in this lab
-
--   Then each of you will perform the lab steps
+-   Then each of you will perform them
 
 -   If you get stuck or have a question, hold up your hand
 
