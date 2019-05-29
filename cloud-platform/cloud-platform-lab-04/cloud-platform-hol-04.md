@@ -24,14 +24,14 @@ Objectives:
 
 -   If you get stuck or have a question, hold up your hand
 
-Account Ready Email - Sign In For the First Time
+## The Account Ready Email - Sign In For the First Time
 
 ![](media/d9b2da3e505e4a99c4fcb0dc791c8183.png)
 *<p align="center">Figure 1: Account Ready Email </p>*
 
 
 
-If you got an email that looks like this one on the left
+If you recieved an email that looks like this one 
 
 -   Oracle Cloud access has been made available to you by the Cloud
     Administrator
