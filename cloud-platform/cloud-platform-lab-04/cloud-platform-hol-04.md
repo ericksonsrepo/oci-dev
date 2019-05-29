@@ -36,7 +36,7 @@ If you recieved an email that looks like this one
 -   Oracle Cloud access has been made available to you by the Cloud
     Administrator
 
--   We will skip to slide 9 on how to access it
+-   Then you next action will be in the Oracle Cloud section, and these others are examples your customer may recieve; again dependent upon how the Cloud Administrator set up accounts.
 
 ## The Account Activation Email - Sign In For the First Time
 
@@ -55,13 +55,13 @@ If you recieved an email that looks like this one
 ## Another Access Email Type
 
 ![](media/c912d1582a6c3be888181c3552152239.png)
-*<p align="center">Figure 4: Login Screen</p>*
+*<p align="center">Figure 4: Another Access Email Example</p>*
 
 In some circumstances, you may receive a separate Oracle Cloud email and in that email is an Access your Cloud Services link
 
 As that may not always be available, we will next go through how to access Oracle Cloud should someone have not gotten that link, or it’s not available
 
-## To Access Oracle Cloud Enter URL **http://cloud.oracle.com/en_US/sign-in** into your browser.
+## To Access the Oracle Cloud - Enter URL **http://cloud.oracle.com/en_US/sign-in** into your browser.
 
 ![](media/4c0ce66dbe90b4c8c4579078bfa0e984.png)
 *<p align="center">Figure 5: Cloud Account Name</p>*
