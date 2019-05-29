@@ -85,12 +85,12 @@ As that may not always be available, we will next go through how to access Oracl
 
 Upon Login You Should See
 
-**My Services Guided Journey**
+**Oracle Cloud My Services Guided Journey**
 
 ![](media/d35f74d1ff304234de82df019c6ef622.png)
 *<p align="center">Figure 9: Guided Journey</p>*
 
-**Unless you see** My Services My Home
+**Unless you see** Oracle Cloud My Services My Home
 
 ![](media/742ce48883a769429bfea72c0971c264.png)
 
