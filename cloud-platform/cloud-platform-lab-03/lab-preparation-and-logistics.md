@@ -4,10 +4,10 @@
 Were going to review the set-up requirements and how to gain access to the
 Oracle Cloud.
 
-Where to locate and get Oracle Cloud help: services, documentation, etc.
+How to navigate and view key information from within the Oracle Cloud My Services console.
 
-So you can successfully login and use the Oracle Cloud this week for the
-upcoming sessions.
+So you can successfully login and use the Oracle Cloud and execute this weeks upcoming course hands-on-labs.
+
 
 # Oracle Cloud Prerequisites
 
