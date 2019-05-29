@@ -90,7 +90,7 @@ Upon Login You Should See
 ![](media/d35f74d1ff304234de82df019c6ef622.png)
 *<p align="center">Figure 9: Guided Journey</p>*
 
-**Unless you see** Oracle Cloud My Services My Home
+**Unless you see** the Oracle Cloud My Services My Home page which is variable upon how the Cloud Administrator setup the account.
 
 ![](media/742ce48883a769429bfea72c0971c264.png)
 
