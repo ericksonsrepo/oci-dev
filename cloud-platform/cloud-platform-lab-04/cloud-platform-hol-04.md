@@ -119,7 +119,7 @@ And then goto the circle drop down menu found in the top right of the page, and 
 *<p align="center">Figure 13: Help Icon</p>*
 
 
-1.  Selecting the ? , to the left of the circle, and a drop down menu appears with
+1.  Selecting the **?** in the menu bar , to the left of the circle, and a drop down menu appears with
     links to help resources
 
 2.  In the **Contact Us** section is the help number for customers or for account
