@@ -161,13 +161,12 @@ throughput test as it may impact your ability to perform labs later
 
 2.  To the right of it, select the **FAQ** box and you will see that it has at least 4 frequently asked question topics             including: **General, Free Credit, Service and Bring Your own License FAQS**. Definitely something yourself and customers should acquaint themselves with.
 
-Finally, go ahead and select the **Go to My Dashboard** button from the FAQs display as shown
-
-
 ![](media/b7182721706b574f8b51dd16de1374df.png)
 *<p align="center">Figure 16: Frequently Asked Questions</p>*
 
-Dashboard
+
+### HOL Activity - Oracle Cloud My Services Dashboard
+Finally, go ahead and select the **Go to My Dashboard** button from the FAQs display as shown
 
 ![](media/771677f37f566d187ec6686095018421.png)
 *<p align="center">Figure 17: Oracle Cloud Services Dashboard</p>*
