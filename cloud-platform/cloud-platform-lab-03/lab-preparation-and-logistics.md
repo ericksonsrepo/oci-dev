@@ -1,12 +1,11 @@
-# Lab Preparation and Logistics
+![](media/ocpheading.png)
+# Class of SE - HOL Lab Preparation
 
 Were going to review the set-up requirements and how to gain access to the
 Oracle Cloud.
 
-Where to locate and get Oracle Cloud help: services, documentation, etc.
+So you can successfully login and use the Oracle Cloud and execute this weeks upcoming course hands-on-labs.
 
-So you can successfully login and use the Oracle Cloud this week for the
-upcoming sessions.
 
 # Oracle Cloud Prerequisites
 
@@ -26,18 +25,18 @@ Primary requirement: supported web browser and working internet connection
 
 Email for Login & Link to Cloud My Services
 
-1.  After you sign up for the free Oracle Cloud promotion or sign up for a paid
-    account, or as with this lab, you’ll get a welcome email. The email provides
-    you with your cloud account details and sign in credentials
+1.  After sign up for the free Oracle Cloud promotion or a paid account, or as with this lab, 
+    you’ll get an email. The email indicates your account is ready or provides
+    you with cloud account details and sign in credentials dependent upon how its been setup by the Cloud Administrator.
 
-2.  Scroll down to the Access Details section and note user name and password
+2.  Typically for customers, they will scroll down in their email invitation to the Access Details section and note user name           and password
 
-3.  Note your the name of your Cloud Account, Access Details, and Identity
+3.  And its essential to note the name of the Cloud Account, Access Details, and Identity
     Domain
 
-4.  Click Access your Cloud Services to get started
+4.  Then click Access your Cloud Services to get started
 
-5.  Bookmark it before you sign-in
+5.  And a best practices to bookmark it before sign-in
 
 ![](media/f21526117e392845aab4cd3a838a2f65.png)
 *<p align="center">Figure 2: My Services Details</p>*
