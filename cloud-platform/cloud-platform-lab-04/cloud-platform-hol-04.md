@@ -1,9 +1,11 @@
 ![](media/ocpheading.png)
 # Class of SE - Oracle Cloud Hands On Lab
 
-### Who Should Complete This Lab: All Participants
+### Who Should Complete This Lab: 
 
-Objectives:
+All Participants
+
+# Objectives:
 
 -   You’re going to first become proficient logging in and then out of the
     Oracle Cloud
