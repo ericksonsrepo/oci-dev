@@ -111,19 +111,18 @@ Upon Login You Should See
 ![](media/f2dfaca6ed510f1b851e64966ddc562a.png)
 *<p align="center">Figure 12: Sign Out</p>*
 
-Log out from the circle drop down menu
+And then goto the circle drop down menu found in the top right of the page, and choose Sign Out
 
-Oracle Cloud My Services Navigation
+### HOL Activity - Oracle Cloud My Services Help Navigation
 
 ![](media/45f2df1e3acfc7b03cd36e73bbfb69d8.png)
 *<p align="center">Figure 13: Help Icon</p>*
 
-**Lab steps**
 
-1.  Selecting the ? , to the left of the circle, a drop down menu appears with
+1.  Selecting the ? , to the left of the circle, and a drop down menu appears with
     links to help resources
 
-2.  In the **Contact Us** section, the help number for customers or for account
+2.  In the **Contact Us** section is the help number for customers or for account
     administrators who have their own Customer Support Identifier (CSI)
 
 3.  In the **Help** section, you can explore the *How Do I* and *Video and
@@ -132,7 +131,7 @@ Oracle Cloud My Services Navigation
 4.  Be sure to explore the *Help for This Page* link as it takes you in-context
     into the documentation to explain what you are looking at, and how to use it
 
-Oracle Cloud My Services
+### HOL Activity - Oracle Cloud My Services Account Navigation
 
 ![](media/7cddbf0e592e84c42afb2327f8f4fa3f.png)
 *<p align="center">Figure 14: Help Icon Continued</p>*
