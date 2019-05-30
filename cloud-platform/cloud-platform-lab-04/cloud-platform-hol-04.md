@@ -136,26 +136,33 @@ And then goto the circle drop down menu found in the top right of the page, and 
 ![](media/7cddbf0e592e84c42afb2327f8f4fa3f.png)
 *<p align="center">Figure 14: Help Icon Continued</p>*
 
--   From the circle, drop down menu, is where to view user account specific
+1.  From the circle, drop down menu, is where to view user account specific
     information & set preferences
 
--   Choose **Preferences** to see language and time preferences
+2.  Choose **Preferences** to see language and time preferences
 
--   Select **User Management** and view where password, user account information
+3.  Select **User Management** and view where password, user account information
     can be updated
 
--   If you select **My Home,** you would be taken to the My Services My Home
+4. If you select **My Home,** you would be taken to the My Services My Home
     page we showed you earlier
 
--   Select **Diagnostics** and run a throughput test
+5. Select **Diagnostics** and run a throughput test
 
--   Feel free to explore, *but don’t perform or save* any actions, besides a
-    throughput test as it may impact your ability to perform labs later
+Feel free to explore, *but don’t perform or save* any actions, besides a
+throughput test as it may impact your ability to perform labs later
 
-Oracle Cloud My Services
+### HOL Activity - Oracle Cloud My Services Guided Journey Navigation
 
 ![](media/83ca8e1dfc0b6ff834a775db95c5b9c6.png)
 *<p align="center">Figure 15: Guided Journey</p>*
+
+1.  In the **Getting Started with Oracle Cloud** box towards the upper left, you will find a short video overview. 
+
+2.  To the right of it, select the **FAQ** box and you will see that it has at least 4 frequently asked question topics             including: **General, Free Credit, Service and Bring Your own License FAQS**. Definitely something yourself and customers should acquaint themselves with.
+
+Finally, go ahead and select the **Go to My Dashboard** button from the FAQs display as shown
+
 
 ![](media/b7182721706b574f8b51dd16de1374df.png)
 *<p align="center">Figure 16: Frequently Asked Questions</p>*
