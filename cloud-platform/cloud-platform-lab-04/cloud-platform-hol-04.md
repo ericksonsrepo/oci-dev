@@ -111,7 +111,7 @@ Upon Login You Should See
 ![](media/f2dfaca6ed510f1b851e64966ddc562a.png)
 *<p align="center">Figure 12: Sign Out</p>*
 
-And then goto the circle drop down menu found in the top right of the page, and choose Sign Out
+4.  And then goto the circle drop down menu found in the top right of the page, and choose Sign Out
 
 ### HOL Activity - Oracle Cloud My Services Help Navigation
 
@@ -119,16 +119,16 @@ And then goto the circle drop down menu found in the top right of the page, and 
 *<p align="center">Figure 13: Help Icon</p>*
 
 
-1.  Selecting the **?** in the menu bar , to the left of the circle, and a drop down menu appears with
+5.  Selecting the **?** in the menu bar , to the left of the circle, and a drop down menu appears with
     links to help resources
 
-2.  In the **Contact Us** section is the help number for customers or for account
+6.  In the **Contact Us** section is the help number for customers or for account
     administrators who have their own Customer Support Identifier (CSI)
 
-3.  In the **Help** section, you can explore the *How Do I* and *Video and
+7.  In the **Help** section, you can explore the *How Do I* and *Video and
     Tutorials* selections
 
-4.  Be sure to explore the *Help for This Page* link as it takes you in-context
+8.  Be sure to explore the *Help for This Page* link as it takes you in-context
     into the documentation to explain what you are looking at, and how to use it
 
 ### HOL Activity - Oracle Cloud My Services Account Navigation
@@ -136,18 +136,18 @@ And then goto the circle drop down menu found in the top right of the page, and 
 ![](media/7cddbf0e592e84c42afb2327f8f4fa3f.png)
 *<p align="center">Figure 14: Help Icon Continued</p>*
 
-1.  From the circle, drop down menu, is where to view user account specific
+9.  From the circle, drop down menu, is where to view user account specific
     information & set preferences
 
-2.  Choose **Preferences** to see language and time preferences
+10.  Choose **Preferences** to see language and time preferences
 
-3.  Select **User Management** and view where password, user account information
+11.  Select **User Management** and view where password, user account information
     can be updated
 
-4. If you select **My Home,** you would be taken to the My Services My Home
+12. If you select **My Home,** you would be taken to the My Services My Home
     page we showed you earlier
 
-5. Select **Diagnostics** and run a throughput test
+13. Select **Diagnostics** and run a throughput test
 
 Feel free to explore, *but don’t perform or save* any actions, besides a
 throughput test as it may impact your ability to perform labs later
@@ -157,16 +157,16 @@ throughput test as it may impact your ability to perform labs later
 ![](media/83ca8e1dfc0b6ff834a775db95c5b9c6.png)
 *<p align="center">Figure 15: Guided Journey</p>*
 
-1.  In the **Getting Started with Oracle Cloud** box towards the upper left, you will find a short video overview. 
+14.  In the **Getting Started with Oracle Cloud** box towards the upper left, you will find a short video overview. 
 
-2.  To the right of it, select the **FAQ** box and you will see that it has at least 4 frequently asked question topics             including: **General, Free Credit, Service and Bring Your own License FAQS**. Definitely something yourself and customers should acquaint themselves with.
+15.  To the right of it, select the **FAQ** box and you will see that it has at least 4 frequently asked question topics             including: **General, Free Credit, Service and Bring Your own License FAQS**. Definitely something yourself and customers should acquaint themselves with.
 
 ![](media/b7182721706b574f8b51dd16de1374df.png)
 *<p align="center">Figure 16: Frequently Asked Questions</p>*
 
 
 ### HOL Activity - Oracle Cloud My Services Dashboard
-Finally, go ahead and select the **Go to My Dashboard** button from the upper right of the FAQs page and you'll see the Oracle Cloud My Services Dashboard of services available to this tenancy. The individual services tiles can be used as the starting point for other Hands-on-Labs courses.
+16. Finally, go ahead and select the **Go to My Dashboard** button from the upper right of the FAQs page and you'll see the     Oracle Cloud My Services Dashboard of services available to this tenancy. The individual services tiles can be used as the starting point for other Hands-on-Labs courses.
 
 ![](media/771677f37f566d187ec6686095018421.png)
 *<p align="center">Figure 17: Oracle Cloud Services Dashboard</p>*
