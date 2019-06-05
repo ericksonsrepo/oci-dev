@@ -7,7 +7,7 @@ Contents
 
 [Section 2. Oracle Cloud Account](#oracle-cloud-account)
 
-[Section 3. Create a Compartment](#create-a-compartment)
+[Section 3. Locate Your Compartment](#create-a-compartment)
 
 
 ## 
