@@ -11,4 +11,4 @@ Lab for specific Class of SE Event.  4 section introductory hands on lab to acco
 [Class Of SE - HOL 2 for Technical Training](https://github.com/dankingsley001/oci-dev/tree/master/Class-Of-HOL-02)
 Lab #2 for specific Class of SE Event.  OCI CLI practice exercise.
 
-
+Testing 123
