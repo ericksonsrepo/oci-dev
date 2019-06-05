@@ -1,6 +1,6 @@
-# Library for OSPA OCI Labs
+# Lab 1 - Class of SE Event
 
-Lab for specific Class of SE Event.  Introductory hands on lab to accompany lecture split into four sections.
+Lab for specific Class of SE Event.  Introductory four section hands on lab to accompany lecture for OCI technical introduction module.
 
 [HOL 1 - Section 1](./Class-Of-Lab-01.md) - Login and find your compartment
 
