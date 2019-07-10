@@ -23,11 +23,11 @@ SSH keys are required to access a running OCI instance securely. You can use an 
 
 ## Linux or Mac based Operating System  
 
-1.  **Open a terminal**  From the opc user home directory (default) type the ssh-keygen command.  Press <Enter> when asked for the filename, and <Enter> twice for *no passphrase*.
+1.  **Open a terminal**  From the opc user home directory (default) type the ssh-keygen command.  Press \<Enter> when asked for the filename, and \<Enter> twice for *no passphrase*.
 
     `[opc-instance]$ ssh-keygen`
 
-**Note:** *Don't lose your key or forget your passphrase, the key won't be usable without them.* 
+**Note:** *Don't lose your key or forget the passphrase if you assign one, the key won't be usable without them.* 
 
 Typing *ssh-keygen* by itself creates a key named id_rsa under the default .ssh directory.  If you want to name your key, store it in another directory, or add other security options, the ssh-keygen command takes a number of useful switches.  
 
@@ -51,7 +51,7 @@ For this lab, the default key is all that's necessary
 
 *<p align="center"> Figure 25: Sample key pair stored in the .ssh directory. </p>*
 
-3.  For Linux and Mac Clients you can load the .pub keyfile directly from the OCI Compute Instance creation screen.  Just remember the folder where you stored it.  Or you can copy the contents of the public key file (.pub). Use an editor or cat command to view the file and copy the key contents. You can use this for the ‘paste key’ dialog when launching an instance.  Whichever way you prefer.
+3.  For Linux and Mac Clients you can load the .pub keyfile directly from the OCI Compute Instance creation screen.  Just remember the folder where you stored it.  Or optionally, you can copy the contents of the public key file (.pub). Use an editor or the `cat` command to view the file and copy the key contents. You can use this for the ‘paste key’ dialog when launching an instance.  Whichever method you prefer.
 
 ![](./media/image34a.png)
 
@@ -185,7 +185,7 @@ For this lab, the default key is all that's necessary
 | Subnet Compartment:  | Your subnet compartment* (ex: team-100)     |
 | Subnet:              | Public Subnet in your compartment*            |
 
-4. In the **Add SSH Key** section you can select the SSH key file from your file system or paste directly from the clipboard (if you’ve saved that information from the key generation step earlier)
+4. In the **Add SSH Key** section you can select the SSH key file from your file system, use the file with the .pub extension.  Or you can paste directly from the clipboard (if you’ve saved that information from the key generation step earlier).
 
 ![](./media/image44.png)
 
