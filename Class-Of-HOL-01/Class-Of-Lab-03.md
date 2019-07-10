@@ -18,8 +18,10 @@ Contents
 # Create SSH Key Pair (Linux, Mac, Windows client)
 [Back to top](#Class-of-SE---HOL-Part-3---Creating-and-accessing-an-instance)
 
-SSH keys are required to access a running OCI instance securely. You can use an existing SSH-2 RSA key pair or create a new one. Below are instructions for generating your individual key pair for Linux, Mac, Windows, and Windows 10.  Windows 10 is the first version to natively support ssh and terminal access.   Insructions for creating SSH keys can also be found on the OCI documentation page.
+SSH keys are required to access a running OCI instance securely. You can use an existing SSH-2 RSA key pair or create a new one. Below are instructions for generating your individual key pair for Linux, Mac, Windows, and Windows 10.  Windows 10 is the first Windows version to natively support ssh and terminal access.   Insructions for creating SSH keys can also be found on the OCI documentation page.
 <https://docs.cloud.oracle.com/iaas/Content/GSG/Tasks/creatingkeys.htm>
+
+Scroll down and choose the key creation method for your operating system, Linux/Mac, Windows, or Windows 10.
 
 ## Linux or Mac based Operating System  
 
@@ -218,7 +220,7 @@ After a few moments, the icon will turn green and the title will change to RUNNI
 # Access the instance 
 [Back to top](#Class-of-SE---HOL-Part-3---Creating-and-accessing-an-instance)
 
-We will use SSH through a terminal session to access the compute image. From there we will install a simple web application.
+We will use SSH through a terminal session to access the compute image. From there we will install a simple web application.  Scroll down and choose your preferred access method, Linux/Mac, Windows with Putty, or Windows 10 through Powershell.
 
 ## SSH Key access for Linux/Mac 
 
