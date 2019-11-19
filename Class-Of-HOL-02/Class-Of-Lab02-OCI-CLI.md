@@ -1,6 +1,6 @@
 ![](./media/image001.png)
 
-## Class of SE - HOL Part 2
+## Rotary Lab Part 2
 
 #  Getting started with the OCI Command Line Interface (CLI)
 
