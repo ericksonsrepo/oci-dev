@@ -1,4 +1,4 @@
-# Lab 2 for Class of SE Event
+# Lab 2 for Rotary
 
 
 
